@@ -510,7 +510,8 @@ body {
     padding: 24px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, .07);
     width: 100%;
-    min-height: 95%;
+    align-self: start;
+    margin-top: 72px;
 }
 .filter_count {
     font-size: 14px;
@@ -618,7 +619,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    padding: 32px;
+    padding: 16px;
     position: relative;
     width: 100%;
     transition: all .3s ease;
@@ -647,8 +648,12 @@ body {
     font-weight: 500;
     word-break: break-word;
     margin-bottom: 16px;
+    transition: all .3s;
 }
-
+.category_card-title:hover {
+    opacity: .8;
+    color: #5AA243;
+}
 .category_card-content {
     display: flex;
     flex-direction: column;
