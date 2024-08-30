@@ -247,9 +247,7 @@ body {
     height: 100%;
 
 }
-.slider_main-item .container div {
-    
-}
+
 .slider_main-content {
     width: 50%;
     display: flex;
@@ -508,28 +506,107 @@ body {
 .category_sidebar {
     background-color: #fff;
     border-radius: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     padding: 24px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, .07);
     width: 100%;
-    min-height: 100%;
+    min-height: 95%;
 }
-
+.filter_count {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #b0b1b2;
+    margin-left: 8px;
+}
+.slick-next {
+    right: 60px;
+    z-index: 10000000;
+}
+.slick-prev {
+    left: 60px;
+    z-index: 10000000;
+}
+.slick-dots {
+    bottom: 0;
+}
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
 .brand_filter-title {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
+    margin-bottom: 24px;
 }
 
 .brand_filter label {
-    margin: 8px 0;
+    margin: 16px 0;
     cursor: pointer;
     display: block;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    margin-left: 24px;
+    user-select: none;
+    position: relative;
 }
+
+
+
+.brand_filter label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c9cacc;
+    transition: background-color 0.3s;
+}
+
+.brand_filter label input:checked ~ .checkmark {
+    background-color: #42ab44;
+    border-color: #42ab44;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.brand_filter label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.brand_filter_title-brand {
+    padding-left: 30px;
+}
+.brand_filter {
+    margin-top: 32px;
+}
+
+
+
+
+
 .category_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -591,4 +668,24 @@ body {
 }
 .category_card-brand {
     color: #5AA243;
+}
+
+.category_card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    font-size: 18px;
+    color: #fff;
+    transition: all .3s ease;
+    background-color: #5AA243;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all .3s ease; 
+    margin-top: 24px; 
+}
+.category_card-btn:hover {
+    opacity: .8;
 }
