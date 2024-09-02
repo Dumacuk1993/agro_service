@@ -694,3 +694,15 @@ body {
 .category_card-btn:hover {
     opacity: .8;
 }
+.category_main {
+    margin: 36px 0;
+}
+.product_title {
+    font-size: 36px;
+    font-weight: 600;
+}
+.product_main {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
