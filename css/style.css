@@ -154,7 +154,6 @@ body {
     transition: all .3s ease;
     background-color: #5AA243;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -604,105 +603,20 @@ body {
     margin-top: 32px;
 }
 
+.slick-next:before, .slick-prev:before {
+    color: #42ab44;
+    font-size: 54px;
+}
+.slick-dots li button:before {
+    top: -5px;
+    font-size: 20px;
+    color: #42ab44;
+    opacity: .5;
+
+}
+.slick-dots li.slick-active button:before {
+    color: #42ab44;
+    opacity: 1;
+}
 
 
-
-
-.category_cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-.category_card {
-    background: #fff;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding: 16px;
-    position: relative;
-    width: 100%;
-    transition: all .3s ease;
-}
-.category_card:hover {
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    transform: scale(1.05);
-}
-.category_card-img {
-    width: 100%;
-    height: 275px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 16px;
-}
-.category_title {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 36px;
-    margin-bottom: 36px;
-}
-
-.category_card-title {
-    font-size: 18px;
-    font-weight: 500;
-    word-break: break-word;
-    margin-bottom: 16px;
-    transition: all .3s;
-}
-.category_card-title:hover {
-    opacity: .8;
-    color: #5AA243;
-}
-.category_card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #7d7e7f;
-}
-.category_card-content i {
-    font-size: 16px;
-}
-.icon_wrapper {
-    width: 24px;
-    display: inline-block;
-    text-align: center;
-    margin-right: 8px;
-}
-.category_card-brand {
-    color: #5AA243;
-}
-
-.category_card-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px;
-    font-size: 18px;
-    color: #fff;
-    transition: all .3s ease;
-    background-color: #5AA243;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 0 auto;
-    transition: all .3s ease; 
-    margin-top: 24px; 
-}
-.category_card-btn:hover {
-    opacity: .8;
-}
-.category_main {
-    margin: 36px 0;
-}
-.product_title {
-    font-size: 36px;
-    font-weight: 600;
-}
-.product_main {
-    display: flex;
-    justify-content: space-between;
-    gap: 28px;
-}
