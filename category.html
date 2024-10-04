@@ -121,178 +121,221 @@
 
     <section class="category_main">
         <div class="container">
-            <div class="category_sidebar">
-                <div class="brand_filter">
-                    <h3 class="brand_filter-title">Производитель</h3>
-                    <label>
-                        <input type="checkbox" value="БМВ">
-                        <span class="checkmark"></span>
-                        <span class="brand_filter_title-brand">Диас</span>
-                        <span class="filter_count">1</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="Беларусь">
-                        <span class="checkmark"></span>
-                        <span class="brand_filter_title-brand">Синий Трактор</span>
-                        <span class="filter_count">5</span>
-                    </label>
+            <h1 class="category_title">Плуги</h1>
+            <div class="category_main-wrapper">
+                <div class="category_sidebar">
+                    <div class="brand_filter">
+                        <h3 class="brand_filter-title">Производитель</h3>
+                        <div class="brand_filter-wrapper">
+                            <label>
+                                <input type="checkbox" value="БМВ">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Диас</span>
+                                <span class="filter_count">1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Беларусь">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Синий Трактор</span>
+                                <span class="filter_count">5</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="БМВ">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Диас</span>
+                                <span class="filter_count">1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Беларусь">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Синий Трактор</span>
+                                <span class="filter_count">5</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="БМВ">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Диас</span>
+                                <span class="filter_count">1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Беларусь">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Синий Трактор</span>
+                                <span class="filter_count">5</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="БМВ">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Диас</span>
+                                <span class="filter_count">1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Беларусь">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Синий Трактор</span>
+                                <span class="filter_count">5</span>
+                            </label>
+                        </div> 
+                    </div>
+                    <div class="brand_filter">
+                        <h3 class="brand_filter-title">Регион производства</h3>
+                        <div class="brand_filter-wrapper">
+                            <label>
+                                <input type="checkbox" value="БМВ">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Краснодар</span>
+                                <span class="filter_count">2</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Беларусь">
+                                <span class="checkmark"></span>
+                                <span class="brand_filter_title-brand">Беларусь</span>
+                                <span class="filter_count">10</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="brand_filter">
-                    <h3 class="brand_filter-title">Регион производства</h3>
-                    <label>
-                        <input type="checkbox" value="БМВ">
-                        <span class="checkmark"></span>
-                        <span class="brand_filter_title-brand">Краснодар</span>
-                        <span class="filter_count">2</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="Беларусь">
-                        <span class="checkmark"></span>
-                        <span class="brand_filter_title-brand">Беларусь</span>
-                        <span class="filter_count">10</span>
-                    </label>
-                </div>
-            </div>
-                <!-- Список товаров
-    <div id="product-list">
-        <div class="product" data-brand="BrandA">Товар 1 (BrandA)</div>
-        <div class="product" data-brand="BrandB">Товар 2 (BrandB)</div>
-        <div class="product" data-brand="BrandC">Товар 3 (BrandC)</div>
-        <div class="product" data-brand="BrandA">Товар 4 (BrandA)</div>
-        <div class="product" data-brand="BrandB">Товар 5 (BrandB)</div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const filters = document.querySelectorAll('#brand-filters input[type="checkbox"]');
-            const products = document.querySelectorAll('.product');
-
-            filters.forEach(filter => {
-                filter.addEventListener('change', function () {
-                    const selectedBrands = Array.from(filters)
-                        .filter(checkbox => checkbox.checked)
-                        .map(checkbox => checkbox.value);
-
-                    products.forEach(product => {
-                        const productBrand = product.getAttribute('data-brand');
-                        if (selectedBrands.includes(productBrand)) {
-                            product.classList.add('visible');
-                        } else {
-                            product.classList.remove('visible');
-                        }
+                    <!-- Список товаров
+        <div id="product-list">
+            <div class="product" data-brand="BrandA">Товар 1 (BrandA)</div>
+            <div class="product" data-brand="BrandB">Товар 2 (BrandB)</div>
+            <div class="product" data-brand="BrandC">Товар 3 (BrandC)</div>
+            <div class="product" data-brand="BrandA">Товар 4 (BrandA)</div>
+            <div class="product" data-brand="BrandB">Товар 5 (BrandB)</div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const filters = document.querySelectorAll('#brand-filters input[type="checkbox"]');
+                const products = document.querySelectorAll('.product');
+    
+                filters.forEach(filter => {
+                    filter.addEventListener('change', function () {
+                        const selectedBrands = Array.from(filters)
+                            .filter(checkbox => checkbox.checked)
+                            .map(checkbox => checkbox.value);
+    
+                        products.forEach(product => {
+                            const productBrand = product.getAttribute('data-brand');
+                            if (selectedBrands.includes(productBrand)) {
+                                product.classList.add('visible');
+                            } else {
+                                product.classList.remove('visible');
+                            }
+                        });
                     });
                 });
             });
-        });
-    </script> -->
-            <div class="category">
-                <h1 class="category_title">Плуги</h1>
-                <div class="category_cards">
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+        </script> -->
+                <div class="category">
+                    
+                    <div class="category_cards">
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a> 
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a> 
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a>
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a> 
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a>
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a> 
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a> 
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a> 
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a>
+                        <a href="" class="category_card">
+                            <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
+                            <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
+                            <div class="category_card-content">
+                                <div class="category_card-brand">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
+                                </div>
+                                <div class="category_card-country">
+                                    <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
+                                </div>
                             </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
-                            </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a> 
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
-                            </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
-                            </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a> 
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
-                            </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
-                            </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a>
-                    <a href="" class="category_card">
-                        <div class="category_card-img" style="background-image: url(img/plug_1.webp);"></div>
-                        <div class="category_card-title">Глубокорыхлители ФАВОРИТ</div>
-                        <div class="category_card-content">
-                            <div class="category_card-brand">
-                                <span class="icon_wrapper"><i class="fa-solid fa-shop"></i></span> Производитель: <span>ДИАС</span>
-                            </div>
-                            <div class="category_card-country">
-                                <span class="icon_wrapper"><i class="fa-solid fa-location-dot"></i></span> Регион: <span>Краснодар</span>
-                            </div>
-                        </div>
-                        <span class="category_card-btn">
-                            Подробнее
-                        </span>
-                    </a> 
+                            <span class="category_card-btn">
+                                Подробнее
+                            </span>
+                        </a> 
+                    </div>
                 </div>
             </div>
         </div>

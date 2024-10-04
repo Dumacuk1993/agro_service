@@ -48,7 +48,7 @@ body {
 .header_main {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 36px;
     margin-top: 24px;
 }
 .header_main-logo {
@@ -315,7 +315,7 @@ body {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 36px;
+    gap: 16px;
     margin-bottom: 80px;
 }
 .advantages_items {
@@ -429,7 +429,7 @@ body {
 
 .footer .container {
     display: grid;
-    grid-template-columns: 55% 43%;
+    grid-template-columns: 55% 1fr;
     gap: 48px;
 }
 
@@ -496,7 +496,7 @@ body {
     margin-top: 18px;
 }
 
-.category_main .container {
+.category_main-wrapper {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 24px;
@@ -510,7 +510,6 @@ body {
     box-shadow: 0 4px 25px rgba(0, 0, 0, .07);
     width: 100%;
     align-self: start;
-    margin-top: 72px;
 }
 .filter_count {
     font-size: 14px;
