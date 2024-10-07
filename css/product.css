@@ -47,17 +47,17 @@
     width: 80%;
     height: auto;
 }
-.product_img-main {
-    
-}
 .product_img-main--img {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    height: 100%;
 }
 .product_img-main--img img {
     max-height: 500px;
     object-fit: contain;
+    max-width: 100%;
+    vertical-align: middle;
 }
 .product_tabs {
     margin-top: 28px;

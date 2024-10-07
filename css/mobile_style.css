@@ -124,6 +124,13 @@
     .category_cards {
         grid-template-columns: repeat(1, 1fr);
     }
+    .slider_main-content {
+        width: 100%;
+    }
+    .slick-next, 
+    .slick-prev {
+        display: none !important;
+    }
 }
 
 @media(max-width: 425px) {
@@ -154,12 +161,9 @@
         font-size: 16px;
         line-height: 24px;
     }
-    .slick-next, 
-    .slick-prev {
-        display: none !important;
-    }
-    .slider_main-content {
-        width: 100%;
+   
+    .slick-dots li button {
+        display: none;
     }
     .catalog_items, .advantages_items {
         grid-template-columns: repeat(1, 1fr);
