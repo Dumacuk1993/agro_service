@@ -45,6 +45,9 @@ body {
 .header-top_menu-item a:hover{
     color: #5AA243;
 }
+.header_burger_menu {
+    display: none;
+}
 .header_main {
     display: flex;
     justify-content: space-between;
@@ -166,7 +169,6 @@ body {
     opacity: .8;
 }
 .header_menu_list {
-    
     opacity: 0;
     z-index: -1;
     position: absolute;

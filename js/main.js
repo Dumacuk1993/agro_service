@@ -17,7 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const catalogListEl = document.querySelector('.header_menu_list');
     let arrowDeg = 0;
 
+    const headerMenuBurgerEl = document.querySelector('.fa-bars');
+    const headerListEl = document.querySelector('.header-top_menu');
+    const headerMenuCloseEl = document.querySelector('.fa-xmark');
+
     catalogBtnEl.addEventListener('click', () => {
+
+        headerListEl.classList.remove('header-top_menu--active');
+        headerMenuCloseEl.style.display = 'none';
+        headerMenuBurgerEl.style.display = 'block';
         catalogListEl.classList.toggle('header_menu_list--active');
 
         if (arrowDeg === 0) {
@@ -27,6 +35,21 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         catalogBtnArrowEl.style.rotate = `${arrowDeg}deg`; 
+    })
+
+    headerMenuBurgerEl.addEventListener("click", () => {
+        headerListEl.classList.add('header-top_menu--active');
+        if (catalogListEl.classList.contains('header_menu_list--active') ) {
+            catalogListEl.classList.remove('header_menu_list--active')      
+        }  
+        headerMenuCloseEl.style.display = 'block';
+        headerMenuBurgerEl.style.display = 'none';
+    }) 
+
+    headerMenuCloseEl.addEventListener("click", () => {
+        headerListEl.classList.remove('header-top_menu--active');  
+        headerMenuCloseEl.style.display = 'none';
+        headerMenuBurgerEl.style.display = 'block';
     })
 
     const ScrollButtons = document.querySelectorAll('.scroll_btn');

@@ -108,6 +108,7 @@
 .tabs_content_character-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 .tabs_content_character-content.bg_gray {
     background: #f4f4f4;
@@ -254,4 +255,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.product_btn_mobile {
+    display: none;
+}
+.product_videos_item {
+    padding: 0 8px;
 }
