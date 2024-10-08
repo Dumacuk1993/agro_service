@@ -66,27 +66,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     })
 
-
-
-    const buttons = document.querySelectorAll('.tabs_header_item');
-    const contents = document.querySelectorAll('.tabs_content_item');
-
-    function showTab(tabId) {
-        buttons.forEach(btn => btn.classList.remove('tabs_header_item--active'));
-        contents.forEach(content => (content.style.display = 'none'));
-        document.querySelector(`.tabs_header_item[data-tab="${tabId}"]`).classList.add('tabs_header_item--active');
-        document.getElementById(tabId).style.display = 'block';
-    }
-
-    showTab('tab-2');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-        const tabId = button.getAttribute('data-tab');
-        showTab(tabId);
-        });
-    });
-    
     const productThumbs = document.querySelectorAll('.product_img-line--img'),
           productCurrent = document.querySelector('.product_img-main--img img');
 
@@ -117,4 +96,46 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Фильтрация каталога
+    const catalogCardEls = document.querySelectorAll('.category_card');
+    const filterCounterEls = document.querySelectorAll('.filter_count');
+    const filterEls = document.querySelectorAll('input[type="checkbox"]');
+    const manufacturersCounter = {}
+
+    catalogCardEls.forEach(card => { 
+        if (!manufacturersCounter[card.getAttribute('data-manufacturer')]) {
+            manufacturersCounter[card.getAttribute('data-manufacturer')] = 1;
+        } else {
+            manufacturersCounter[card.getAttribute('data-manufacturer')]++;
+        }
+    })
+
+    filterCounterEls.forEach(counter => {
+        counter.textContent = manufacturersCounter[counter.getAttribute('data-manufacturer')] || 0
+    })
+
+    filterEls.forEach(filter => {
+        filter.addEventListener('change', applyFilters);
+    });
+
+    function applyFilters() {     
+        const selectedManufacturers = Array.from(document.querySelectorAll('.brand_filter input[type="checkbox"]:checked'))
+            .filter(checkbox => checkbox.value !== '')
+            .map(checkbox => checkbox.value);
+
+        catalogCardEls.forEach(card => {
+            const cardManufacturer = card.getAttribute('data-manufacturer');
+            const matchesManufacturer = selectedManufacturers.length === 0 || selectedManufacturers.includes(cardManufacturer);
+
+            if (matchesManufacturer) {
+                card.classList.add('visible');
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+                card.classList.remove('visible');
+            }
+        });
+    }
+
 })

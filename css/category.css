@@ -6,13 +6,19 @@
 .category_card {
     background: #fff;
     border-radius: 12px;
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-bottom: 20px;
     padding: 16px;
     position: relative;
     width: 100%;
     transition: all .3s ease;
+}
+.category_card.visible {
+    display: flex;
+}
+.category_card.hidden {
+    display: none;
 }
 .category_card:hover {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
