@@ -2,6 +2,9 @@
     .category_cards {
         grid-template-columns: repeat(2, 1fr);
     }
+    .news_page_items {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media(max-width: 1024px) {
     .catalog_items, .advantages_items {
@@ -21,6 +24,12 @@
     }
     .product_right .product_right_button {
         display: none;
+    }
+    .contacts_map iframe{
+        height: 400px;
+    }
+    .contacts_social_links {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media(max-width: 990px) {
@@ -114,6 +123,10 @@
     .brand_filter label {
         margin: 8px 0 8px 12px;
     }
+    .contacts_main {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
 }
 @media(max-width: 768px) {
     .slick-next {
@@ -156,6 +169,15 @@
         min-width: 100px;
     }
     .product_img-line--img img {
+        width: 100%;
+    }
+    .about_title {
+        font-size: 32px;
+    }
+    .news_page_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news_article-main-thub {
         width: 100%;
     }
 }
@@ -205,12 +227,29 @@
     .slick-prev {
         display: none !important;
     }
+    .privacy_title,
+    .service_title {
+        font-size: 26px;
+    }
+    .news_page_item-text_title {
+        font-size: 18px;
+    }
+    .news_page_item-text_text {
+        font-size: 14px;
+    }
+    .news_page_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .news_page_item-img,
+    .news_page_item-img img {
+        height: 300px;
+    }
 }
 @media(max-width: 470px) {
     .product_right-advantage {
         padding: 0px;
     }
-
+    
 }
 @media(max-width: 425px) {
     .container {
@@ -234,7 +273,7 @@
         justify-content: center;
     }
     .header_main-logo {
-        width: 100%;
+        width: 65%;
     }
     .header_main-phones a {
         font-size: 16px;
@@ -283,5 +322,26 @@
     }
     .header-top_menu {
         width: 100%;
+    }
+    .about_contacts-phones {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contacts_phone,
+    .contacts-mails,
+    .contacts_social_links {
+        font-size: 14px;
+    }
+    .contacts_phone i,
+    .contacts-mails i,
+    .contacts_social_links i {
+        font-size: 16px;
+        margin-right: 4px;
+    }
+    .contacts_map_title {
+        font-size: 14px;
+    }
+    .contacts_map iframe {
+        height: 340px;
     }
 }

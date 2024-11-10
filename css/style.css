@@ -423,7 +423,6 @@ body {
 }
 .footer {
     padding-top: 60px;
-    padding-bottom: 60px;
     background-color: rgba(90, 162, 67, .3);    
 }
 
@@ -620,4 +619,20 @@ body {
     opacity: 1;
 }
 
-
+.footer_copy {
+    padding: 48px 0 24px 0;
+}
+.footer_copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer_copy a {
+    color: #42ab44;
+    transition: all .3s ease;
+}
+.footer_copy a:hover {
+    opacity: .6;
+}

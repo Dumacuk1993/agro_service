@@ -1,0 +1,90 @@
+.about {
+    margin: 46px 0;
+}
+.about_title {
+    text-align: center;
+    font-size: 46px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+.about_content {
+    margin-top: 32px;
+}
+.about_content img {
+    display: block;
+    margin: 0 auto;
+}
+.about_content p {
+    margin: 16px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.about_content p span {
+    font-weight: 700;
+}
+.about_content h4 {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 24px 0;
+}
+.about_content ol,
+.about_content li {
+    list-style-type: decimal;
+}
+.about_content li {
+    margin: 8px 0;
+    margin-left: 20px;
+}
+
+.about_contacts {
+    background-color: rgba(90, 162, 67, .3);
+    padding-top: 36px;
+}
+.about_contacts i {
+    font-size: 22px;
+    display: block;
+    color: #5AA243;
+}
+.about_contacts a,
+.about_contacts span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all .3s ease;
+}
+.about_contacts a:hover {
+    color: #5AA243;
+}
+.about_contacts-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.about_contacts-description {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.about_contacts-mails {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+.about_contacts-phones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.slider_about {
+    margin: 24px 0;
+}
+.slick-slide {
+    margin: 0 10px !important;
+}
+.about_content-img img {
+    width: 100%;
+}

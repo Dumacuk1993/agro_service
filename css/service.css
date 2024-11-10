@@ -1,0 +1,12 @@
+.service {
+    margin: 64px 0;
+}
+.service_title {
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.service_text {
+    margin-top: 28px;
+}
